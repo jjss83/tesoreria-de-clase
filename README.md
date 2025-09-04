@@ -22,4 +22,4 @@ Sistema contable ligero para administrar la caja chica del 2º grado (cuotas men
 - [`ROADMAP.md`](./ROADMAP.md): plan por sprints.
 - [`LOGGING_AUDIT.md`](./LOGGING_AUDIT.md): auditoría e idempotencia.
 - [`COPILOT_INSTRUCTIONS.md`](./COPILOT_INSTRUCTIONS.md): guía para GitHub Copilot/Agent.
-- [`copilot-instructions.md`](./copilot-instructions.md): instrucciones automáticas para actualización de changelog.
+- [`COPILOT_CUSTOM_INSTRUCTIONS_SETUP.md`](./.github/COPILOT_CUSTOM_INSTRUCTIONS_SETUP.md): configuración de instrucciones automáticas para changelog.

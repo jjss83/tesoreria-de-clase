@@ -1,0 +1,46 @@
+{
+  // Enable GitHub Copilot custom instructions
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  
+  // Custom instructions for specific Copilot features
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Generate commit messages that clearly describe the change impact on treasury management functionality. Use conventional commit format (feat:, fix:, docs:, etc.) and include context about financial operations when relevant."
+    }
+  ],
+  
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "text": "Include a detailed list of changes, their impact on treasury operations, any data migration requirements, and testing performed. Highlight changes affecting financial calculations, data integrity, or user workflows."
+    }
+  ],
+  
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "text": "Focus on financial calculation accuracy, data validation, error handling, and user experience impact. Pay special attention to changes affecting payment processing, fee calculations, or data import/export functionality."
+    }
+  ],
+  
+  // Editor settings for better Copilot experience
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+    "typescript": true,
+    "javascript": true,
+    "json": true
+  },
+  
+  // Markdown-specific settings for documentation
+  "markdown.preview.breaks": true,
+  "markdown.preview.linkify": true,
+  
+  // File associations for better Copilot context
+  "files.associations": {
+    "*.instructions.md": "markdown",
+    "copilot-instructions.md": "markdown",
+    "CHANGELOG.md": "markdown"
+  }
+}
