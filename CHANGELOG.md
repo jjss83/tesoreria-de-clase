@@ -8,17 +8,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup with comprehensive documentation structure
-- GitHub Copilot markdown-based instructions for automatic changelog updates
-- Intelligent change categorization system for treasury management context
-- Professional changelog template following Keep a Changelog format
+- Initial project setup with comprehensive documentation structure including PRD, architecture, and data schemas
+- GitHub Copilot custom instructions system for automatic changelog management
+- Professional changelog prompt file (`.github/prompts/changelog.prompt.md`) for agent-mode automation
+- VS Code workspace configuration with Copilot integration settings
+- Comprehensive custom instructions for treasury management context
+- Intelligent change categorization system following Keep a Changelog format
+- Multi-layered instruction system (global and file-specific) for enhanced Copilot guidance
 
 ### Changed
-- Migrated from complex YAML workflow to simple markdown instructions approach
-- Enhanced documentation with treasury-specific context and examples
+- Migrated from complex YAML workflow approach to VS Code native custom instructions
+- Enhanced documentation structure with treasury-specific context and examples
+- Improved Copilot integration using official VS Code customization features
+- Streamlined instruction files for better maintainability and clarity
 
 ### Removed
-- Complex GitHub Actions workflow file in favor of simpler markdown approach
+- Complex GitHub Actions workflow files in favor of simpler prompt-based approach
+- Redundant instruction files that didn't follow VS Code standards
+- Outdated workflow configuration that required manual setup
 
 ---
 
