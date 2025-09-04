@@ -23,3 +23,5 @@ Sistema contable ligero para administrar la caja chica del 2º grado (cuotas men
 - [`LOGGING_AUDIT.md`](./LOGGING_AUDIT.md): auditoría e idempotencia.
 - [`COPILOT_INSTRUCTIONS.md`](./COPILOT_INSTRUCTIONS.md): guía para GitHub Copilot/Agent.
 - [`COPILOT_CUSTOM_INSTRUCTIONS_SETUP.md`](./.github/COPILOT_CUSTOM_INSTRUCTIONS_SETUP.md): configuración de instrucciones automáticas para changelog.
+- [`CHANGELOG_PROMPT_USAGE.md`](./.github/CHANGELOG_PROMPT_USAGE.md): guía de uso del prompt para actualización automática de changelog.
+- [`VERSION_MANAGEMENT.md`](./.github/VERSION_MANAGEMENT.md): gestión de versiones y releases usando prompts de Copilot.

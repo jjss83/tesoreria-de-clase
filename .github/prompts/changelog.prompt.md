@@ -83,3 +83,47 @@ When relevant, emphasize:
 4. Write clear, context-aware entries
 5. Update CHANGELOG.md under [Unreleased] section
 6. Maintain existing format and structure
+
+## Version Release Management
+
+### Creating a New Release
+When ready to release a version:
+
+1. **Determine version number** using Semantic Versioning:
+   - **MAJOR** (1.0.0): Breaking changes or major new features
+   - **MINOR** (0.1.0): New features that are backward compatible
+   - **PATCH** (0.0.1): Bug fixes and small improvements
+
+2. **Move [Unreleased] to versioned section**:
+   ```markdown
+   ## [1.0.0] - 2025-09-03
+   
+   ### Added
+   - [Content from Unreleased section]
+   
+   ## [Unreleased]
+   [Empty or new changes]
+   ```
+
+3. **Create git tag for the release**:
+   ```bash
+   git tag -a v1.0.0 -m "Release version 1.0.0"
+   git push origin v1.0.0
+   ```
+
+4. **Add version links at bottom of changelog**:
+   ```markdown
+   [1.0.0]: https://github.com/jjss83/tesoreria-de-clase/releases/tag/v1.0.0
+   ```
+
+### Release Types for Treasury System
+
+- **Major Release (1.0.0)**: Complete system launch, database schema changes
+- **Minor Release (0.1.0)**: New payment methods, reporting features, MCP tools
+- **Patch Release (0.0.1)**: Bug fixes, calculation corrections, UI improvements
+
+### Git-Based Versioning
+The prompt can detect versions from:
+- **Git tags**: `git tag -l` to list existing versions
+- **Last release date**: `git log -1 --format=%cd --date=short -- CHANGELOG.md`
+- **Changes since last tag**: `git log $(git describe --tags --abbrev=0)..HEAD --oneline`
